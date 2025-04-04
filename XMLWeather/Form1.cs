@@ -14,7 +14,7 @@ namespace XMLWeather
     public partial class Form1 : Form
     {
         // TODO: create list to hold day objects
-
+       public static List<Day> days = new List<Day>();
 
         public Form1()
         {
@@ -36,9 +36,21 @@ namespace XMLWeather
             {
                 //TODO: create a day object
 
-                //TODO: fill day object with required data
+                Day d = new Day();
 
-                //TODO: if day object not null add to the days list
+                //TODO: find time element and get day attribute
+
+                reader.ReadToFollowing("time");
+                d.date = reader.GetAttribute("day");
+
+                // find temp element get min max attributes
+
+                reader.ReadToFollowing("temperature");
+                d.tempLow = reader.GetAttribute("min");
+                d.tempHigh = reader.GetAttribute("max");
+
+                //add day to list of days
+                days.Add(d);
             }
         }
 
@@ -49,6 +61,29 @@ namespace XMLWeather
 
             //TODO: find the city and current temperature and add to appropriate item in days list
 
+            reader.ReadToFollowing("city");
+            days[0].location = reader.GetAttribute("name");
+
+            reader.ReadToFollowing("temperature");
+            days[0].currentTemp = reader.GetAttribute("value");
+
+            // reader.ReadToFollowing("");
+            // days[0].currentTime = reader.GetAttribute("");
+
+            DateTime dateTime = DateTime.Now;
+            days[0].currentTime = Convert.ToString(dateTime.TimeOfDay);
+
+            reader.ReadToFollowing("speed");
+            days[0].windSpeed = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("direction");
+            days[0].windDirection = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("precipitation");
+            days[0].precipitation = reader.GetAttribute("mode");
+
+            reader.ReadToFollowing("visibility");
+            days[0].visibility = reader.GetAttribute("value");
         }
 
 
