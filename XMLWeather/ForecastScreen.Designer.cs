@@ -94,7 +94,7 @@
             this.min1.Location = new System.Drawing.Point(69, 178);
             this.min1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.min1.Name = "min1";
-            this.min1.Size = new System.Drawing.Size(29, 16);
+            this.min1.Size = new System.Drawing.Size(70, 16);
             this.min1.TabIndex = 48;
             // 
             // minLabel
@@ -114,7 +114,7 @@
             this.max1.Location = new System.Drawing.Point(69, 147);
             this.max1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max1.Name = "max1";
-            this.max1.Size = new System.Drawing.Size(29, 16);
+            this.max1.Size = new System.Drawing.Size(70, 16);
             this.max1.TabIndex = 45;
             // 
             // maxLabel
@@ -168,7 +168,7 @@
             this.min2.Location = new System.Drawing.Point(72, 289);
             this.min2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.min2.Name = "min2";
-            this.min2.Size = new System.Drawing.Size(29, 16);
+            this.min2.Size = new System.Drawing.Size(67, 16);
             this.min2.TabIndex = 68;
             // 
             // label4
@@ -188,7 +188,7 @@
             this.max2.Location = new System.Drawing.Point(72, 261);
             this.max2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max2.Name = "max2";
-            this.max2.Size = new System.Drawing.Size(29, 16);
+            this.max2.Size = new System.Drawing.Size(67, 16);
             this.max2.TabIndex = 66;
             // 
             // label7
@@ -340,7 +340,7 @@
             this.max3.Location = new System.Drawing.Point(69, 382);
             this.max3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max3.Name = "max3";
-            this.max3.Size = new System.Drawing.Size(29, 16);
+            this.max3.Size = new System.Drawing.Size(70, 16);
             this.max3.TabIndex = 82;
             // 
             // min3
@@ -349,7 +349,7 @@
             this.min3.Location = new System.Drawing.Point(69, 408);
             this.min3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.min3.Name = "min3";
-            this.min3.Size = new System.Drawing.Size(29, 16);
+            this.min3.Size = new System.Drawing.Size(70, 16);
             this.min3.TabIndex = 83;
             // 
             // max4
@@ -358,7 +358,7 @@
             this.max4.Location = new System.Drawing.Point(255, 147);
             this.max4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max4.Name = "max4";
-            this.max4.Size = new System.Drawing.Size(29, 16);
+            this.max4.Size = new System.Drawing.Size(57, 16);
             this.max4.TabIndex = 84;
             // 
             // min5
@@ -367,7 +367,7 @@
             this.min5.Location = new System.Drawing.Point(255, 289);
             this.min5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.min5.Name = "min5";
-            this.min5.Size = new System.Drawing.Size(29, 16);
+            this.min5.Size = new System.Drawing.Size(57, 16);
             this.min5.TabIndex = 85;
             // 
             // max5
@@ -376,7 +376,7 @@
             this.max5.Location = new System.Drawing.Point(255, 261);
             this.max5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max5.Name = "max5";
-            this.max5.Size = new System.Drawing.Size(29, 16);
+            this.max5.Size = new System.Drawing.Size(57, 16);
             this.max5.TabIndex = 86;
             // 
             // min4
@@ -385,7 +385,7 @@
             this.min4.Location = new System.Drawing.Point(255, 178);
             this.min4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.min4.Name = "min4";
-            this.min4.Size = new System.Drawing.Size(29, 16);
+            this.min4.Size = new System.Drawing.Size(57, 16);
             this.min4.TabIndex = 87;
             // 
             // min6
@@ -394,7 +394,7 @@
             this.min6.Location = new System.Drawing.Point(255, 408);
             this.min6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.min6.Name = "min6";
-            this.min6.Size = new System.Drawing.Size(29, 16);
+            this.min6.Size = new System.Drawing.Size(57, 16);
             this.min6.TabIndex = 88;
             // 
             // max6
@@ -403,7 +403,7 @@
             this.max6.Location = new System.Drawing.Point(255, 382);
             this.max6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.max6.Name = "max6";
-            this.max6.Size = new System.Drawing.Size(29, 16);
+            this.max6.Size = new System.Drawing.Size(57, 16);
             this.max6.TabIndex = 89;
             // 
             // ForecastScreen

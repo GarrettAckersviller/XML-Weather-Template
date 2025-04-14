@@ -47,13 +47,18 @@
             this.precipOutput = new System.Windows.Forms.Label();
             this.visibilityOutput = new System.Windows.Forms.Label();
             this.visOutput = new System.Windows.Forms.Label();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.currentLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
             // 
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(28, 105);
+            this.cityOutput.Location = new System.Drawing.Point(6, 102);
             this.cityOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cityOutput.Name = "cityOutput";
             this.cityOutput.Size = new System.Drawing.Size(94, 28);
@@ -62,18 +67,19 @@
             // 
             // maxOutput
             // 
-            this.maxOutput.BackColor = System.Drawing.Color.White;
-            this.maxOutput.Location = new System.Drawing.Point(156, 222);
+            this.maxOutput.BackColor = System.Drawing.Color.Black;
+            this.maxOutput.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.maxOutput.Location = new System.Drawing.Point(52, 194);
             this.maxOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxOutput.Name = "maxOutput";
-            this.maxOutput.Size = new System.Drawing.Size(151, 16);
+            this.maxOutput.Size = new System.Drawing.Size(48, 16);
             this.maxOutput.TabIndex = 32;
             // 
             // maxLabel
             // 
             this.maxLabel.AutoSize = true;
             this.maxLabel.ForeColor = System.Drawing.Color.White;
-            this.maxLabel.Location = new System.Drawing.Point(28, 222);
+            this.maxLabel.Location = new System.Drawing.Point(6, 194);
             this.maxLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maxLabel.Name = "maxLabel";
             this.maxLabel.Size = new System.Drawing.Size(32, 16);
@@ -82,18 +88,19 @@
             // 
             // minOutput
             // 
-            this.minOutput.BackColor = System.Drawing.Color.White;
-            this.minOutput.Location = new System.Drawing.Point(156, 194);
+            this.minOutput.BackColor = System.Drawing.Color.Black;
+            this.minOutput.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.minOutput.Location = new System.Drawing.Point(52, 167);
             this.minOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minOutput.Name = "minOutput";
-            this.minOutput.Size = new System.Drawing.Size(151, 16);
+            this.minOutput.Size = new System.Drawing.Size(48, 16);
             this.minOutput.TabIndex = 30;
             // 
             // minLabel
             // 
             this.minLabel.AutoSize = true;
             this.minLabel.ForeColor = System.Drawing.Color.White;
-            this.minLabel.Location = new System.Drawing.Point(28, 194);
+            this.minLabel.Location = new System.Drawing.Point(6, 167);
             this.minLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minLabel.Name = "minLabel";
             this.minLabel.Size = new System.Drawing.Size(28, 16);
@@ -114,7 +121,7 @@
             // 
             this.tempLabel.AutoSize = true;
             this.tempLabel.ForeColor = System.Drawing.Color.White;
-            this.tempLabel.Location = new System.Drawing.Point(28, 167);
+            this.tempLabel.Location = new System.Drawing.Point(4, 147);
             this.tempLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tempLabel.Name = "tempLabel";
             this.tempLabel.Size = new System.Drawing.Size(130, 16);
@@ -167,18 +174,20 @@
             // 
             // windOutput
             // 
-            this.windOutput.BackColor = System.Drawing.Color.White;
-            this.windOutput.Location = new System.Drawing.Point(156, 259);
+            this.windOutput.BackColor = System.Drawing.Color.Black;
+            this.windOutput.Cursor = System.Windows.Forms.Cursors.Default;
+            this.windOutput.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.windOutput.Location = new System.Drawing.Point(93, 232);
             this.windOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.windOutput.Name = "windOutput";
-            this.windOutput.Size = new System.Drawing.Size(151, 16);
+            this.windOutput.Size = new System.Drawing.Size(41, 16);
             this.windOutput.TabIndex = 44;
             // 
             // wsLabel
             // 
             this.wsLabel.AutoSize = true;
             this.wsLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.wsLabel.Location = new System.Drawing.Point(28, 259);
+            this.wsLabel.Location = new System.Drawing.Point(6, 232);
             this.wsLabel.Name = "wsLabel";
             this.wsLabel.Size = new System.Drawing.Size(80, 16);
             this.wsLabel.TabIndex = 46;
@@ -188,7 +197,7 @@
             // 
             this.wdLabel.AutoSize = true;
             this.wdLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.wdLabel.Location = new System.Drawing.Point(28, 288);
+            this.wdLabel.Location = new System.Drawing.Point(6, 264);
             this.wdLabel.Name = "wdLabel";
             this.wdLabel.Size = new System.Drawing.Size(92, 16);
             this.wdLabel.TabIndex = 47;
@@ -196,18 +205,19 @@
             // 
             // wdOutput
             // 
-            this.wdOutput.BackColor = System.Drawing.Color.White;
-            this.wdOutput.Location = new System.Drawing.Point(156, 288);
+            this.wdOutput.BackColor = System.Drawing.Color.Black;
+            this.wdOutput.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.wdOutput.Location = new System.Drawing.Point(105, 264);
             this.wdOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wdOutput.Name = "wdOutput";
-            this.wdOutput.Size = new System.Drawing.Size(151, 16);
+            this.wdOutput.Size = new System.Drawing.Size(52, 16);
             this.wdOutput.TabIndex = 48;
             // 
             // precipLabel
             // 
             this.precipLabel.AutoSize = true;
             this.precipLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.precipLabel.Location = new System.Drawing.Point(28, 318);
+            this.precipLabel.Location = new System.Drawing.Point(3, 300);
             this.precipLabel.Name = "precipLabel";
             this.precipLabel.Size = new System.Drawing.Size(81, 16);
             this.precipLabel.TabIndex = 49;
@@ -215,18 +225,19 @@
             // 
             // precipOutput
             // 
-            this.precipOutput.BackColor = System.Drawing.Color.White;
-            this.precipOutput.Location = new System.Drawing.Point(156, 319);
+            this.precipOutput.BackColor = System.Drawing.Color.Black;
+            this.precipOutput.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.precipOutput.Location = new System.Drawing.Point(91, 301);
             this.precipOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.precipOutput.Name = "precipOutput";
-            this.precipOutput.Size = new System.Drawing.Size(151, 15);
+            this.precipOutput.Size = new System.Drawing.Size(43, 15);
             this.precipOutput.TabIndex = 50;
             // 
             // visibilityOutput
             // 
             this.visibilityOutput.AutoSize = true;
             this.visibilityOutput.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.visibilityOutput.Location = new System.Drawing.Point(31, 357);
+            this.visibilityOutput.Location = new System.Drawing.Point(6, 336);
             this.visibilityOutput.Name = "visibilityOutput";
             this.visibilityOutput.Size = new System.Drawing.Size(56, 16);
             this.visibilityOutput.TabIndex = 51;
@@ -234,18 +245,59 @@
             // 
             // visOutput
             // 
-            this.visOutput.BackColor = System.Drawing.Color.White;
-            this.visOutput.Location = new System.Drawing.Point(156, 353);
+            this.visOutput.BackColor = System.Drawing.Color.Black;
+            this.visOutput.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.visOutput.Location = new System.Drawing.Point(69, 336);
             this.visOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.visOutput.Name = "visOutput";
-            this.visOutput.Size = new System.Drawing.Size(151, 20);
+            this.visOutput.Size = new System.Drawing.Size(69, 16);
             this.visOutput.TabIndex = 52;
+            // 
+            // searchBox
+            // 
+            this.searchBox.Location = new System.Drawing.Point(98, 106);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(100, 22);
+            this.searchBox.TabIndex = 53;
+            // 
+            // SearchButton
+            // 
+            this.SearchButton.Location = new System.Drawing.Point(204, 105);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(75, 23);
+            this.SearchButton.TabIndex = 54;
+            this.SearchButton.Text = "Search";
+            this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
+            // 
+            // currentLabel
+            // 
+            this.currentLabel.BackColor = System.Drawing.Color.Black;
+            this.currentLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.currentLabel.Location = new System.Drawing.Point(142, 147);
+            this.currentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.currentLabel.Name = "currentLabel";
+            this.currentLabel.Size = new System.Drawing.Size(53, 16);
+            this.currentLabel.TabIndex = 55;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(204, 233);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(121, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 56;
+            this.pictureBox1.TabStop = false;
             // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.currentLabel);
+            this.Controls.Add(this.SearchButton);
+            this.Controls.Add(this.searchBox);
             this.Controls.Add(this.visOutput);
             this.Controls.Add(this.visibilityOutput);
             this.Controls.Add(this.precipOutput);
@@ -268,6 +320,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(333, 492);
+//            this.Load += new System.EventHandler(this.CurrentScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +347,9 @@
         private System.Windows.Forms.Label precipOutput;
         private System.Windows.Forms.Label visibilityOutput;
         private System.Windows.Forms.Label visOutput;
+        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.Label currentLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
